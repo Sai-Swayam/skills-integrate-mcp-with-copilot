@@ -10,6 +10,22 @@
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <section id="auth-panel">
+        <h3>Account Access</h3>
+        <form id="login-form">
+          <div class="auth-row">
+            <label for="username">Username</label>
+            <input type="text" id="username" required placeholder="admin / faculty1 / student1" />
+          </div>
+          <div class="auth-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="Enter password" />
+          </div>
+          <button type="submit">Log In</button>
+        </form>
+        <div id="auth-status" class="hidden"></div>
+        <button id="logout-btn" class="hidden">Log Out</button>
+      </section>
     </header>
 
     <main>
@@ -22,7 +38,8 @@
       </section>
 
       <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
+        <h3>Register Students for an Activity</h3>
+        <p class="hint-text">Only Administrator and Faculty accounts can register or remove participants.</p>
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
